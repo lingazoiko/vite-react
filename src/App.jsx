@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ScrollToTop from "./ScrollToTop";
 import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header/Header';
@@ -24,7 +25,7 @@ function App() {
   return (
     <>
       {loading && <PageLoader onFinish={() => setLoading(false)} />}
-
+<ScrollToTop />
       <Header />
 
       <Routes>

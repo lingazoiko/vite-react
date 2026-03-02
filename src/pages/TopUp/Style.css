@@ -1,0 +1,12 @@
+.topup-banner-section {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; /* prevents overflow */
+}
+
+.topup-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}

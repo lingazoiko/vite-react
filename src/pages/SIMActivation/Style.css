@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue: #0b5cd7;
+  --blue-dark: #0944a8;
+  --blue-light: #e8f0fd;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --bg: #f4f6f9;
+  --white: #ffffff;
+  --radius: 10px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* ── PAGE ── */
+.sim-activate {
+  min-height: 100vh;
+  background: var(--bg);
+  padding: 60px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* ── CARD ── */
+.sim-container {
+  width: 100%;
+  max-width: 860px;
+  background: var(--white);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+/* ── CARD HEADER ── */
+.sim-header {
+  background: var(--blue);
+  padding: 36px 48px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sim-header-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sim-header-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.sim-header-text h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.sim-header-text p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.72);
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+/* ── CARD BODY ── */
+.sim-body {
+  padding: 40px 48px 48px;
+}
+
+/* ── SECTION ── */
+.form-section {
+  margin-bottom: 32px;
+}
+
+.form-section-title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── GRID ── */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 24px;
+}
+
+.form-grid .full {
+  grid-column: span 2;
+}
+
+/* ── FIELD ── */
+.field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 10px 13px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--text);
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.18s, box-shadow 0.18s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.field input::placeholder {
+  color: #c0c6d0;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(11, 92, 215, 0.1);
+}
+
+.select-wrap {
+  position: relative;
+}
+
+.select-wrap::after {
+  content: '';
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--muted);
+  pointer-events: none;
+}
+
+.select-wrap select {
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+/* ── ACTIONS ── */
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.primary-btn {
+  flex: 1;
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.12s;
+}
+
+.primary-btn:hover {
+  background: var(--blue-dark);
+  transform: translateY(-1px);
+}
+
+.secondary-btn {
+  flex: 1;
+  background: var(--white);
+  color: var(--text);
+  border: 1.5px solid var(--border);
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.18s, background 0.18s, transform 0.12s;
+}
+
+.secondary-btn:hover {
+  border-color: #c0c6d0;
+  background: var(--bg);
+  transform: translateY(-1px);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .sim-header,
+  .sim-body {
+    padding: 28px 24px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid .full {
+    grid-column: span 1;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+}

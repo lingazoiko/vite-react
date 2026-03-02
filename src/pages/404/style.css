@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap');
+
+/* ================= PAGE ROOT ================= */
+.notfound-page {
+  min-height: 100vh;
+  background: #050510;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Mono', monospace;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ================= STARFIELD ================= */
+.notfound-page .stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.notfound-page .star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle var(--dur) ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.1; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.4); }
+}
+
+/* ================= GRID ================= */
+.notfound-page .grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(99, 102, 241, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.07) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridMove 20s linear infinite;
+  z-index: 0;
+}
+
+@keyframes gridMove {
+  from { transform: translateY(0); }
+  to { transform: translateY(60px); }
+}
+
+/* ================= ORBIT RING ================= */
+.notfound-page .orbit-ring {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border: 1px dashed rgba(99, 102, 241, 0.2);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 25s linear infinite;
+  z-index: 0;
+}
+
+.notfound-page .orbit-ring::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #f43f5e;
+  border-radius: 50%;
+  top: -4px;
+  left: 50%;
+  margin-left: -4px;
+  box-shadow: 0 0 12px #f43f5e;
+}
+
+@keyframes spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ================= SCANLINE ================= */
+.notfound-page .scanline {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.03) 0px,
+    rgba(0, 0, 0, 0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* ================= CORNERS ================= */
+.notfound-page .corner {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-color: #6366f1;
+  border-style: solid;
+  opacity: 0.4;
+}
+
+.notfound-page .corner-tl { top: 24px; left: 24px; border-width: 2px 0 0 2px; }
+.notfound-page .corner-tr { top: 24px; right: 24px; border-width: 2px 2px 0 0; }
+.notfound-page .corner-bl { bottom: 24px; left: 24px; border-width: 0 0 2px 2px; }
+.notfound-page .corner-br { bottom: 24px; right: 24px; border-width: 0 2px 2px 0; }
+
+/* ================= CONTAINER ================= */
+.notfound-page .container {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* ================= GLITCH 404 ================= */
+.notfound-page .glitch-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.notfound-page .glitch {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(8rem, 25vw, 18rem);
+  color: #fff;
+  animation: flicker 5s infinite;
+  position: relative;
+}
+
+.notfound-page .glitch::before,
+.notfound-page .glitch::after {
+  content: '404';
+  position: absolute;
+  inset: 0;
+}
+
+.notfound-page .glitch::before {
+  color: #f43f5e;
+  animation: glitch1 3s infinite;
+  clip-path: polygon(0 0,100% 0,100% 45%,0 45%);
+}
+
+.notfound-page .glitch::after {
+  color: #6366f1;
+  animation: glitch2 3s infinite;
+  clip-path: polygon(0 55%,100% 55%,100% 100%,0 100%);
+}
+
+@keyframes glitch1 {
+  92% { transform: translate(-4px,2px); opacity:1; }
+  98% { opacity:0; }
+}
+
+@keyframes glitch2 {
+  87% { transform: translate(4px,-2px); opacity:1; }
+  93% { opacity:0; }
+}
+
+@keyframes flicker {
+  99% { opacity:0.4; }
+}
+
+/* ================= NEON LINE ================= */
+.notfound-page .neon-line {
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, transparent, #6366f1, #f43f5e, transparent);
+  margin: -1rem auto 2.5rem;
+  animation: lineExpand 1s ease forwards;
+  box-shadow: 0 0 20px #6366f1;
+}
+
+@keyframes lineExpand {
+  to { width: 80%; }
+}
+
+/* ================= ASTRONAUT ================= */
+.notfound-page .astronaut-wrap {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 2.5rem;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  50% { transform: translateY(-18px) rotate(3deg); }
+}
+
+/* ================= TEXT ================= */
+.notfound-page .heading {
+  color: #a5b4fc;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.notfound-page .subtext {
+  color: #6b7280;
+  max-width: 400px;
+  margin: 0 auto 2.5rem;
+}
+
+/* ================= BUTTON ================= */
+.notfound-page .btn {
+  padding: 0.85rem 2.2rem;
+  border: 1.5px solid #6366f1;
+  background: transparent;
+  color: #a5b4fc;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.notfound-page .btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #6366f1;
+  transform: translateX(-101%);
+  transition: 0.35s;
+  z-index: -1;
+}
+
+.notfound-page .btn:hover::before { transform: translateX(0); }
+.notfound-page .btn:hover { color: #fff; }

@@ -1,0 +1,91 @@
+.zm-footer {
+  background: linear-gradient(180deg, #2bb673, #1f8f8b);
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-top {
+  padding: 60px 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 130px;
+  margin-bottom: 15px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-col li:hover {
+  text-decoration: underline;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.store-buttons button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  font-size: 18px;
+}
+
+/* Offices */
+.footer-offices {
+  border-top: 1px solid rgba(255,255,255,0.4);
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  padding: 40px 0;
+}
+
+.office-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
+
+.footer-col a,
+.footer-offices a,
+.store-buttons a,
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-col a:hover,
+.footer-offices a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,406 @@
+.zoiko-philosophy {
+  width: 100%;
+  padding: 28px 20px;
+  background: linear-gradient(
+    90deg,
+    #2fbf71 0%,
+    #1fa39a 50%,
+    #147a8c 100%
+  );
+  text-align: center;
+}
+
+.zoiko-philosophy h2 {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* Zoiko Mobile */
+
+/* SECTION */
+.zoiko-chronicle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background: #fff;
+}
+
+.zoiko-chronicle h2 {
+  font-family: "Inter", Sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #2AA772;
+}
+
+.zoiko-chronicle p {
+     font-family: "Inter", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #525252;
+
+}
+
+.read-more {
+  margin-top: 20px;
+  background: none;
+  border: none;
+  color: #1aa15f;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* MODAL OVERLAY */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* MODAL BOX */
+.modal-box {
+  background: #fff;
+  width: 90%;
+  max-width: 900px;
+  max-height: 85vh;
+  border-radius: 14px;
+  padding: 40px;
+  position: relative;
+  overflow-y: auto;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* MODAL TEXT */
+.modal-content p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 22px;
+}
+
+/* Reasons to Love Zoiko */
+
+.reasons-section {
+  padding: 90px 0;
+      background-image: linear-gradient(150deg, #F5F5F5 0%, #FAFAFA 100%);
+  text-align: center;
+}
+
+.reasons-section h2 {
+     font-family: "Inter", Sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    color: #E91E63;
+}
+
+.title-underline {
+  display: inline-block;
+  width: 70px;
+  height: 4px;
+  background: #ffb400;
+  border-radius: 4px;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  margin-bottom: 60px;
+}
+
+/* CARD */
+.reason-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ICON */
+.reason-card .icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  background: #1aa15f;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TEXT */
+.reason-card h4 {
+ font-family: "Inter", Sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #262626;
+}
+
+.reason-card p {
+      font-family: "Inter", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #525252;
+}
+
+/* BUTTON */
+.view-plans-btn {
+ background-color: #61CE7000;
+    font-family: "Arial", Sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    fill: #E91E63;
+    color: #E91E63;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #E91E63;
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px 50px 15px 50px;
+  transition: all 0.3s ease;
+}
+
+.view-plans-btn:hover {
+  background: #e6005c;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .reasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .reasons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Our Core Values */
+
+.core-values {
+  padding: 90px 0;
+  background: #fff;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.core-values h2 {
+      font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    color: #E91E63;
+}
+
+.title-underline {
+  display: inline-block;
+  width: 70px;
+  height: 4px;
+  background: #ffb400;
+  border-radius: 4px;
+  margin-bottom: 60px;
+}
+
+/* LIST */
+.values-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* CARD */
+.value-card {
+  background: #FAFAFA;
+  border-radius: 22px;
+  padding: 35px 40px;
+  border-left: 4px solid #1aa15f;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* ICON */
+.value-icon {
+  width: 52px;
+  height: 52px;
+  background: #ffd400;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* CONTENT */
+.value-content h4 {
+     margin-bottom: 14px;
+    font-family: "Inter", Sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2AA772;
+    text-align: left;
+}
+
+.value-content p {
+      font-family: "Inter", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #525252;
+    text-align: left;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .value-card {
+    padding: 28px;
+    flex-direction: column;
+  }
+
+  .value-card::before {
+    top: 0;
+    bottom: 0;
+    border-radius: 10px;
+  }
+}
+
+/* Last Section */
+
+.zoiko-cta {
+  padding: 100px 0;
+  background: #1F8487;
+  color: #fff;
+  text-align: center;
+}
+
+.zoiko-cta h2 {
+ font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    color: #FFFFFF;
+}
+
+.title-underline.yellow {
+  display: inline-block;
+  width: 80px;
+  height: 4px;
+  background: #ffd400;
+  border-radius: 4px;
+  margin: 14px auto 30px;
+}
+
+.sub-title {
+      font-size: 24px;
+    font-weight: 600;
+    color: #FFD700;
+}
+
+.sub-title span {
+  font-weight: 700;
+}
+
+.tagline {
+      font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    color: #FFFFFF;
+  opacity: 0.9;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.cta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+/* CARD */
+.cta-card {
+  background-color: #FFFFFF33;
+  border-radius: 20px;
+  padding: 35px 30px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ICON */
+.cta-icon {
+  width: 54px;
+  height: 54px;
+  background: #ffd400;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #000;
+}
+
+.cta-card h4 {
+ margin-bottom: 14px;
+    font-family: "Inter", Sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.cta-card p {
+     font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .cta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .zoiko-cta h2 {
+    font-size: 28px;
+  }
+}

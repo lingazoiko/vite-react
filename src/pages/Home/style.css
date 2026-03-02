@@ -1,0 +1,544 @@
+/* ================= HERO SECTION ================= */
+
+.hero-section {
+  min-height: 580px;
+  width: 100%;
+  background: url('/images/Home/hero-banner.webp') no-repeat right center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.hero-content {
+  max-width: 520px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(150deg, #2D3748, #E4007C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+
+  background: linear-gradient(150deg, #2D3748, #E4007C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+}
+
+.hero-content p {
+     font-size: 19px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #718096;
+}
+
+.hero-price {
+  margin-bottom: 30px;
+}
+
+.hero-price .price {
+      font-size: 60px;
+    font-weight: 700;
+    line-height: 46px;
+    color: #E4007C;
+}
+
+.hero-price .per {
+    font-size: 19px;
+    font-weight: 400;
+    color: #718096;
+  margin-left: 6px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background-image: linear-gradient(180deg, #E91E63 0%, #C2185B 100%);
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btn-outline {
+  border: 2px solid #e6007e;
+     font-size: 18px;
+    font-weight: 700;
+    fill: #E91E63;
+    color: #E91E63;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background: #e6007e;
+  color: #fff;
+}
+
+/* ================= SECOND SECTION ================= */
+
+.why-zoiko {
+  padding: 80px 0;
+  background: #ffffff;
+  text-align: center;
+}
+
+.why-zoiko h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #111;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+}
+
+.why-card {
+  background: #f8fbfe;
+  border-radius: 20px;
+  padding: 40px 20px;
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.why-icon {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.why-card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+  .hero-section {
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+  .hero-content {
+    text-align: center;
+    margin: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= THIRD SECTION ================= */
+
+.why-choose {
+  padding: 90px 0;
+  background: #f3fff9;
+}
+
+.why-choose h2 {
+  text-align: center;
+  margin-bottom: 60px;
+      font-size: 32px;
+    font-weight: 700;
+    line-height: 57px;
+    color: #171717;
+}
+
+.choose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.choose-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px 30px;
+  transition: all 0.3s ease;
+}
+
+.choose-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.choose-icon {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.choose-card h4 {
+      margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #262626;
+}
+
+.choose-card p {
+ font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #718096;
+}
+
+@media (max-width: 991px) {
+  .choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .choose-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= FOURTH SECTION — PLANS ================= */
+
+.plans-section {
+  padding: 90px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.plans-section h2 {
+ font-size: 32px;
+    font-weight: 700;
+    line-height: 57px;
+    color: #171717;
+  margin-bottom: 40px;
+}
+
+.plan-tabs {
+  display: inline-flex;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 14px;
+  margin-bottom: 50px;
+}
+
+.plan-tabs button {
+  padding: 5px 22px;
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.plan-tabs .active {
+  background: #ffd400;
+}
+
+/* CARD */
+.plan-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px 25px;
+  border: 1px solid #eee;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+/* CENTER CARD HIGHLIGHT */
+.plan-card.highlight {
+  border: 2px solid #1aa15f;
+  transform: translateY(0px);
+}
+
+/* BOX */
+.plan-box {
+  background: #f8f8f8;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.plan-box .data {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1aa15f;
+  display: block;
+}
+
+.plan-box .price {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.plan-box small {
+  font-size: 14px;
+}
+
+/* REMOVE DOTS */
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.plan-card li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.buy-btn {
+  width: 100%;
+  background: #e6007e;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ================= FIFTH SECTION — TRUST ================= */
+
+.reasons-trust {
+  padding: 90px 0;
+  background: #f9fcff;
+  text-align: center;
+}
+
+.reasons-trust h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  color: #111;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.trust-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 40px 30px;
+  border: 1px solid #eaeaea;
+  transition: all 0.3s ease;
+}
+
+.trust-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.trust-icon {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.trust-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.trust-card p {
+  font-size: 15px;
+  color: #5f6b7a;
+  line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= SIXTH SECTION — MOBILE CAROUSEL (FIXED) ================= */
+
+.mobile-section {
+  padding: 60px 40px;
+  text-align: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+.mobile-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.mobile-section p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Swiper wrapper for the product carousel */
+.mobile-swiper {
+  width: 100%;
+  padding-bottom: 10px !important;
+}
+
+/* Each card inside the Swiper */
+.mobile-swiper .card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-swiper .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.mobile-swiper .card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.mobile-swiper .card .price {
+  display: block;
+  color: #ff007a;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.mobile-swiper .card button {
+  border: 1.5px solid #ff007a;
+  background: transparent;
+  color: #ff007a;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.mobile-swiper .card button:hover {
+  background: #ff007a;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .mobile-section {
+    padding: 50px 16px;
+  }
+
+  .mobile-section h2 {
+    font-size: 22px;
+  }
+}
+
+.support-section {
+  padding: 80px 20px;
+  background: #f9fcff;
+  text-align: center;
+}
+
+.support-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.support-section .subtitle {
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.support-card {
+  background: #fff;
+  padding: 40px 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.support-icon {
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
+.support-card h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.support-card p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .support-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,535 @@
+/* GotQuestions.css */
+
+.faq-hero {
+  width: 100%;
+  padding: 90px 20px;
+  background: linear-gradient(
+    90deg,
+    #2fbf71 0%,
+    #1fa39a 50%,
+    #147a8c 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.faq-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.faq-hero h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.faq-hero p {
+  font-size: 16px;
+  opacity: 0.95;
+  margin-bottom: 40px;
+}
+
+/* SEARCH BAR */
+.faq-search {
+  background: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 14px 22px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.faq-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+.search-icon {
+  font-size: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .faq-hero {
+    padding: 70px 16px;
+  }
+
+  .faq-hero h1 {
+    font-size: 30px;
+  }
+
+  .faq-hero h3 {
+    font-size: 17px;
+  }
+}
+
+/* Quick Help Categories */
+
+/* QuickHelpCategories.css */
+
+.quick-help {
+  padding: 80px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.quick-help h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.quick-help-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.quick-help-card {
+  background: #f4fbf9;
+  border-radius: 26px;
+  padding: 40px 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.quick-help-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.quick-help-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.quick-help-card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+/* QUESTION BADGE */
+.question-badge {
+  display: inline-block;
+  background: #1f9c7c;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .quick-help-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .quick-help-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-help h2 {
+    font-size: 26px;
+  }
+}
+
+/* =============================================
+   ZOIKO SUPPORT SECTION — ZoikoSupport.css
+   All classes prefixed with "zs-" to avoid
+   conflicts with other stylesheets
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+/* ── Page Wrapper & Layout ── */
+.zs-page-wrapper {
+  background: #f0f4f3;
+  font-family: 'DM Sans', sans-serif;
+  padding: 40px 0 60px;
+}
+
+.zs-page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+/* ── Main Content (Left Column) ── */
+.zs-main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ── Hero Card ── */
+.zs-hero-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 36px;
+  margin-bottom: 28px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+}
+
+.zs-hero-card h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+.zs-hero-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 12px;
+}
+
+.zs-hero-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── FAQ Section ── */
+.zs-faq-section {
+  margin-bottom: 28px;
+}
+
+.zs-faq-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+/* ── Accordion Item ── */
+.zs-accordion-item {
+  background: #ffffff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.zs-accordion-item:hover {
+  border-color: #a7d7c5;
+  box-shadow: 0 2px 10px rgba(47, 140, 110, 0.08);
+}
+
+.zs-accordion-item.zs-open {
+  border-color: #2d8c6e;
+  box-shadow: 0 4px 14px rgba(47, 140, 110, 0.13);
+}
+
+/* ── Accordion Header (button) ── */
+.zs-accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.zs-accordion-question {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.4;
+}
+
+/* ── Chevron Icon ── */
+.zs-accordion-icon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #e8f4f0;
+  color: #2d8c6e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+              background 0.22s ease,
+              color 0.22s ease;
+}
+
+.zs-accordion-icon.zs-rotated {
+  transform: rotate(180deg);
+}
+
+.zs-accordion-item.zs-open .zs-accordion-icon {
+  background: #2d8c6e;
+  color: #ffffff;
+}
+
+/* ── Accordion Body — smooth height animation ── */
+.zs-accordion-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.zs-accordion-item.zs-open .zs-accordion-body {
+  grid-template-rows: 1fr;
+}
+
+.zs-accordion-body-inner {
+  overflow: hidden;
+  padding: 0 18px;
+  font-size: 13.5px;
+  color: #666;
+  line-height: 1.7;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.28s ease 0.06s,
+              transform 0.28s ease 0.06s;
+}
+
+.zs-accordion-item.zs-open .zs-accordion-body-inner {
+  opacity: 1;
+  transform: translateY(0);
+  padding-bottom: 16px;
+}
+
+/* =============================================
+   SIDEBAR (Right Column)
+   ============================================= */
+.zs-sidebar {
+  width: 270px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── Sidebar Card ── */
+.zs-sidebar-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px 20px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+}
+
+.zs-sidebar-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.zs-sidebar-card p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Green underline accent */
+.zs-section-underline {
+  width: 36px;
+  height: 3px;
+  background: #2d8c6e;
+  border-radius: 2px;
+  margin-bottom: 14px;
+}
+
+/* ── Call Us Now (green gradient card) ── */
+.zs-contact-card-green {
+  background: linear-gradient(135deg, #2d8c6e 0%, #3aaa85 100%);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.zs-contact-card-green:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.zs-contact-title-white {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.zs-contact-text-white {
+  font-size: 12px;
+  opacity: 0.88;
+  line-height: 1.5;
+}
+
+/* ── Live Chat / Email bordered cards ── */
+.zs-contact-card {
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.zs-contact-card:last-of-type {
+  margin-bottom: 0;
+}
+
+.zs-contact-card:hover {
+  border-color: #2d8c6e;
+  box-shadow: 0 2px 8px rgba(45, 140, 110, 0.1);
+}
+
+.zs-contact-icon {
+  color: #ffffff;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.zs-contact-icon-gray {
+  color: #2d8c6e;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.zs-contact-title-green {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2d8c6e;
+  margin-bottom: 3px;
+}
+
+.zs-contact-text-gray {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* ── Popular Topics ── */
+.zs-topic-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #2d8c6e;
+  cursor: pointer;
+  transition: gap 0.2s ease, opacity 0.2s;
+}
+
+.zs-topic-item:last-child {
+  border-bottom: none;
+}
+
+.zs-topic-item:hover {
+  gap: 12px;
+  opacity: 0.75;
+}
+
+/* ── App Features ── */
+.zs-app-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 9px;
+}
+
+.zs-app-feature-check {
+  width: 18px;
+  height: 18px;
+  background: #2d8c6e;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.zs-app-feature-label {
+  font-size: 13px;
+  color: #444;
+}
+
+.zs-app-image-netflix {
+  margin-top: 14px;
+  border-radius: 10px;
+  background: #141414;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: 900;
+  color: #e50914;
+  letter-spacing: -2px;
+  font-family: Georgia, serif;
+  margin-bottom: 8px;
+}
+
+.zs-app-image-preview {
+  border-radius: 10px;
+  background: #ede8dc;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #999;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .zs-page-container {
+    flex-direction: column;
+  }
+  .zs-sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .zs-hero-card {
+    padding: 22px 18px;
+  }
+  .zs-hero-card h1 {
+    font-size: 17px;
+  }
+}

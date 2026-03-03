@@ -1,0 +1,220 @@
+.zone-hero {
+  background: linear-gradient(90deg, #2bb673, #1f8f8b);
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.zone-hero-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.zone-hero-content p {
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+/* Roaming Zone Charges (Text) */
+
+/* SECTION BACKGROUND */
+.rz-section {
+  padding: 60px 20px;
+ 
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADING */
+.rz-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.rz-badge {
+  background: linear-gradient(90deg, #6f5af7, #8e73ff);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rz-heading h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: #111;
+}
+
+/* CARD */
+.rz-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+/* TABLE HEADER */
+.rz-table-header {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  padding: 22px 28px;
+  background: #f2f3f5;
+  font-size: 14px;
+}
+
+.rz-table-header p {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* ROWS */
+.rz-row {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  padding: 18px 28px;
+  border-top: 1px solid #e6e6e6;
+  align-items: center;
+}
+
+.rz-link {
+  font-weight: 600;
+  color: #0c5c63;
+  cursor: pointer;
+}
+
+.rz-link:hover {
+  text-decoration: underline;
+}
+
+.rz-price {
+  color: #0a8f55;
+  font-weight: 600;
+}
+
+/* MODAL */
+.rz-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.rz-modal {
+  background: #f6f6f6;
+  width: 85%;
+  max-width: 1100px;
+  border-radius: 18px;
+  padding: 40px;
+}
+
+.rz-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rz-modal-header h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #0c5c63;
+  position: relative;
+  padding-bottom: 12px;
+  margin: 0;
+}
+
+.rz-modal-header h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 2px;
+  background: #0c5c63;
+}
+
+.rz-close {
+  background: #0c5c63;
+  color: #fff;
+  border: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* GRID */
+.rz-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px 60px;
+}
+
+/* Roaming Zones (Calls) */
+
+/* CALLS BADGE COLOR */
+.rz-badge-calls {
+  background: linear-gradient(90deg, #e91e63, #ff4b7d);
+}
+
+/* DATA BADGE */
+.rz-badge-data {
+  background: linear-gradient(90deg, #ff4b8b, #ff7aa5);
+}
+
+/* PAY MONTHLY INFO CARD */
+.rz-info-card {
+  background: #f3f3f3;
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+  /* IMPORTANT */
+  max-width: 1200px;
+  margin: 10px auto 0 auto;
+
+  border-top: 4px solid #0c8f6f;
+}
+
+.rz-info-card h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+.rz-info-card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #111827;
+  text-align: left;
+  margin: 0;
+}
+
+/* Voice And Text Bundles */
+
+/* PINK TOP BORDER VERSION */
+.rz-info-pink {
+  border-top: 4px solid #e91e63;
+}
+
+/* Improve spacing for multiple paragraphs */
+.rz-info-card p {
+  margin-bottom: 20px;
+}
+
+.rz-info-card p:last-child {
+  margin-bottom: 0;
+}

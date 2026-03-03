@@ -65,7 +65,9 @@ function Footer() {
           <div className="footer-col">
             <h4>Zoiko Rates</h4>
             <ul>
-              <li><a href="/roaming-overage">Roaming and Overage</a></li>
+            <li><NavLink className="nav-link" to="/roaming-and-overage">
+           Roaming And Overage
+           </NavLink></li> 
               <li><a href="/zero-cost-sms">Zero Cost SMS</a></li>
               <li><a href="/discounted-rates">Discounted Rates</a></li>
               <li><a href="/refer-a-friend">Refer A Friend</a></li>
@@ -79,9 +81,9 @@ function Footer() {
               <li><a href="/blogs">Blogs</a></li>
               <li><a href="/news">News</a></li>
               <li></li>
-              <NavLink className="nav-link" to="/faqs">
+             <li> <NavLink className="nav-link" to="/faqs">
            FAQs
-           </NavLink>
+           </NavLink></li>
               <li><a href="/contact-us">Contact Us</a></li>
             </ul>
           </div>

@@ -18,6 +18,7 @@ import TopUp from './pages/TopUp/TopUp';
 import SwitchAndSave from './pages/SwitchAndSave/SwitchAndSave';
 import Support from './pages/Support/Support';
 import Faqs from './pages/FAQs/Faqs';
+import Roamingandoverage from './pages/Roaming and Overage/Roamingandoverage';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -44,6 +45,7 @@ function App() {
 
         {/* Footer Pages */}
         <Route path="/faqs"  element={<Faqs />} />
+        <Route path="/roaming-and-overage"  element={<Roamingandoverage />} />
       </Routes>
 
       <Footer />

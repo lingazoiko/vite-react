@@ -9,7 +9,6 @@ import PageLoader from './components/PageLoader/PageLoader'; // ✅ clean import
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Plans from './pages/Plans';
-import ZeroCostSMS from './pages/ZeroCostSMS';
 import NotFound from './pages/404/NotFound';
 
 import SIMActivation from './pages/SIMActivation/ActivateYourSIM';
@@ -19,6 +18,10 @@ import SwitchAndSave from './pages/SwitchAndSave/SwitchAndSave';
 import Support from './pages/Support/Support';
 import Faqs from './pages/FAQs/Faqs';
 import Roamingandoverage from './pages/Roaming and Overage/Roamingandoverage';
+<<<<<<< HEAD
+=======
+import Zerocostsms from './pages/Zero Cost SMS/Zerocostsms';
+>>>>>>> 8d10878 (Added Free SMS page and suspicious section)
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,7 +36,6 @@ function App() {
         <Route path="/"              element={<Home />} />
         <Route path="/plans"         element={<Plans />} />
         <Route path="/about-us"      element={<About />} />
-        <Route path="/zero-cost-sms" element={<ZeroCostSMS />} />
         <Route path="*"              element={<NotFound />} />
 
         {/* Top Navbar */}
@@ -46,6 +48,10 @@ function App() {
         {/* Footer Pages */}
         <Route path="/faqs"  element={<Faqs />} />
         <Route path="/roaming-and-overage"  element={<Roamingandoverage />} />
+<<<<<<< HEAD
+=======
+        <Route path="/zero-cost-sms"  element={<Zerocostsms />} />
+>>>>>>> 8d10878 (Added Free SMS page and suspicious section)
       </Routes>
 
       <Footer />

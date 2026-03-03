@@ -1,0 +1,211 @@
+.free-sms-hero {
+  width: 100%;
+  background: linear-gradient(90deg, #2bb673 0%, #1f8f8b 100%);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.free-sms-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.free-sms-hero h1 {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* These include */
+
+.sms-includes-section {
+  padding: 80px 20px;
+  background: #f6f6f6;
+  text-align: center;
+}
+
+.sms-includes-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #e91e63;
+  margin-bottom: 30px;
+}
+
+/* Green Highlight Banner */
+.sms-highlight {
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  background: #cfe7df;
+  padding: 25px;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #084c3f;
+}
+
+/* Card Grid */
+.sms-card-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+.sms-card {
+  background: #ffffff;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.sms-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Pink Pill */
+.sms-pill {
+  display: inline-block;
+  background: #f7c4d4;
+  color: #d81b60;
+  padding: 8px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.sms-card h3 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+  color: #111;
+}
+
+/* If you receive a suspicious text */
+
+.sms-warning-section {
+  padding: 40px 20px;
+  background: #f6f6f6;
+  text-align: center;
+}
+
+.sms-warning-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #1f8f5f;
+  margin-bottom: 60px;
+}
+
+/* Grid */
+.sms-warning-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.sms-warning-card {
+  background: #ffffff;
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.sms-warning-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon */
+.sms-warning-icon {
+  font-size: 50px;
+  color: #e91e63;
+  margin-bottom: 20px;
+}
+
+/* Title */
+.sms-warning-card h3 {
+  font-size: 26px;
+  color: #e91e63;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* Text */
+.sms-warning-card p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .sms-warning-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.suspicious-section {
+  padding: 80px 20px;
+  background: #f6f6f6;
+  text-align: center;
+}
+
+.suspicious-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #1f8f5f;
+  margin-bottom: 60px;
+}
+
+/* Grid */
+.suspicious-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.suspicious-card {
+  background: #ffffff;
+  padding: 50px 30px;
+  border-radius: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease;
+}
+
+.suspicious-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Icon */
+.suspicious-icon {
+  font-size: 50px;
+  color: #d81b60;
+  margin-bottom: 20px;
+}
+
+/* Title */
+.suspicious-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #d81b60;
+  margin-bottom: 18px;
+}
+
+/* Text */
+.suspicious-card p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}

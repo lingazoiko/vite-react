@@ -68,9 +68,6 @@ function Footer() {
             <li><NavLink className="nav-link" to="/roaming-and-overage">
            Roaming And Overage
            </NavLink></li> 
-
-              <li><a href="/zero-cost-sms">Zero Cost SMS</a></li>
-
               <li><NavLink className="nav-link" to="/zero-cost-sms">
            Zero Cost SMS
            </NavLink></li>

@@ -18,10 +18,9 @@ import SwitchAndSave from './pages/SwitchAndSave/SwitchAndSave';
 import Support from './pages/Support/Support';
 import Faqs from './pages/FAQs/Faqs';
 import Roamingandoverage from './pages/Roaming and Overage/Roamingandoverage';
-<<<<<<< HEAD
-=======
+
 import Zerocostsms from './pages/Zero Cost SMS/Zerocostsms';
->>>>>>> 8d10878 (Added Free SMS page and suspicious section)
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -48,10 +47,9 @@ function App() {
         {/* Footer Pages */}
         <Route path="/faqs"  element={<Faqs />} />
         <Route path="/roaming-and-overage"  element={<Roamingandoverage />} />
-<<<<<<< HEAD
-=======
+
         <Route path="/zero-cost-sms"  element={<Zerocostsms />} />
->>>>>>> 8d10878 (Added Free SMS page and suspicious section)
+
       </Routes>
 
       <Footer />

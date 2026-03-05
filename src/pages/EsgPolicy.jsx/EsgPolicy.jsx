@@ -12,7 +12,7 @@ const navItems = [
   { id: "conclusion",      label: "Conclusion",                           num: "08" },
 ];
 
-function Esgpolicy() {
+function EsgPolicy() {
   const [activeId, setActiveId] = useState("introduction");
 
   useEffect(() => {
@@ -493,4 +493,4 @@ function Esgpolicy() {
   );
 }
 
-export default Esgpolicy;
+export default EsgPolicy;

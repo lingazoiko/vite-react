@@ -24,8 +24,8 @@ import Discountedrates from './pages/Discounted Rates/Discountedrates';
 import Privacypolicy from './pages/Privacy Policy/Privacypolicy';
 import Modernslaverypolicy from './pages/modern-slavery-policy/ModernSlaveryPolicy';
 import Termsandconditions from './pages/terms-and-conditions/TermsAndConditions';
-import VulnerabilityPolicy from './pages/vulnerability-policy/Vulnerabilitypolicy';
 import EsgPolicy from './pages/EsgPolicy.jsx/Esgpolicy';
+import VulnerabilityPolicy from './pages/vulnerability-policy/Vulnerabilitypolicy';
 
 
 function App() {

@@ -21,6 +21,7 @@ import Roamingandoverage from './pages/Roaming and Overage/Roamingandoverage';
 
 import Zerocostsms from './pages/Zero Cost SMS/Zerocostsms';
 import Discountedrates from './pages/Discounted Rates/Discountedrates';
+import Privacypolicy from './pages/Privacy Policy/Privacypolicy';
 
 
 function App() {
@@ -50,6 +51,9 @@ function App() {
         <Route path="/roaming-and-overage"  element={<Roamingandoverage />} />
         <Route path="/zero-cost-sms"  element={<Zerocostsms />} />
         <Route path="/discounted-rates"  element={<Discountedrates />} />
+
+        {/* Footer Legal Pages */}
+        <Route path="/privacy-policy"  element={<Privacypolicy />} />
 
       </Routes>
 

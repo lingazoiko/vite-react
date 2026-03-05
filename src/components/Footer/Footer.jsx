@@ -97,7 +97,9 @@ function Footer() {
           <div className="footer-col">
             <h4>Zoiko Legal</h4>
             <ul>
-              <li><a href="/privacy-policy">Privacy Policy</a></li>
+              <li><NavLink className="nav-link" to="/privacy-policy">
+           Privacy Policy
+           </NavLink></li>
               <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
               <li><a href="/vulnerability-policy">Vulnerability Policy</a></li>
               <li><a href="/modern-slavery-policy">Modern Slavery Policy</a></li>

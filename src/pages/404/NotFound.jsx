@@ -133,7 +133,7 @@ export default function NotFound() {
         </p>
 
         <button className="btn" onClick={() => window.history.back()}>
-          ← Return Home <span className="arrow">→</span>
+          ← Return Home <span className="arrow"></span>
         </button>
       </div>
     </div>

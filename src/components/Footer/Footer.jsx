@@ -72,7 +72,9 @@ function Footer() {
            Zero Cost SMS
            </NavLink></li>
 
-              <li><a href="/discounted-rates">Discounted Rates</a></li>
+              <li><NavLink className="nav-link" to="/discounted-rates">
+           Discounted Rates
+           </NavLink></li>
               <li><a href="/refer-a-friend">Refer A Friend</a></li>
             </ul>
           </div>

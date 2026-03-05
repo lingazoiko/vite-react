@@ -20,6 +20,7 @@ import Faqs from './pages/FAQs/Faqs';
 import Roamingandoverage from './pages/Roaming and Overage/Roamingandoverage';
 
 import Zerocostsms from './pages/Zero Cost SMS/Zerocostsms';
+import Discountedrates from './pages/Discounted Rates/Discountedrates';
 
 
 function App() {
@@ -47,8 +48,8 @@ function App() {
         {/* Footer Pages */}
         <Route path="/faqs"  element={<Faqs />} />
         <Route path="/roaming-and-overage"  element={<Roamingandoverage />} />
-
         <Route path="/zero-cost-sms"  element={<Zerocostsms />} />
+        <Route path="/discounted-rates"  element={<Discountedrates />} />
 
       </Routes>
 

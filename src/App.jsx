@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import PageLoader from './components/PageLoader/PageLoader'; // ✅ clean import
+import PageLoader from './components/PageLoader/PageLoader';
 
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
@@ -24,8 +24,8 @@ import Discountedrates from './pages/Discounted Rates/Discountedrates';
 import Privacypolicy from './pages/Privacy Policy/Privacypolicy';
 import Modernslaverypolicy from './pages/modern-slavery-policy/ModernSlaveryPolicy';
 import Termsandconditions from './pages/terms-and-conditions/TermsAndConditions';
-import VulnerabilityPolicy from './pages/vulnerability-policy/Vulnerabilitypolicy';
-import EsgPolicy from './pages/EsgPolicy.jsx/Esgpolicy';
+import VulnerabilityPolicy from './pages/vulnerability-policy/VulnerabilityPolicy';
+import EsgPolicy from './pages/EsgPolicy.jsx/EsgPolicy';
 
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       {loading && <PageLoader onFinish={() => setLoading(false)} />}
-<ScrollToTop />
+      <ScrollToTop />
       <Header />
 
       <Routes>
@@ -44,24 +44,24 @@ function App() {
         <Route path="*"              element={<NotFound />} />
 
         {/* Top Navbar */}
-        <Route path="/activate-your-sim"         element={<SIMActivation />} />
-        <Route path="/top-up"         element={<TopUp />} />
-        <Route path="/switch-and-save"         element={<SwitchAndSave />} />
-        <Route path="/contact"         element={<Contact />} />
-        <Route path="/support"         element={<Support />} />
+        <Route path="/activate-your-sim"  element={<SIMActivation />} />
+        <Route path="/top-up"             element={<TopUp />} />
+        <Route path="/switch-and-save"    element={<SwitchAndSave />} />
+        <Route path="/contact"            element={<Contact />} />
+        <Route path="/support"            element={<Support />} />
 
         {/* Footer Pages */}
-        <Route path="/faqs"  element={<Faqs />} />
-        <Route path="/roaming-and-overage"  element={<Roamingandoverage />} />
-        <Route path="/zero-cost-sms"  element={<Zerocostsms />} />
-        <Route path="/discounted-rates"  element={<Discountedrates />} />
+        <Route path="/faqs"               element={<Faqs />} />
+        <Route path="/roaming-and-overage" element={<Roamingandoverage />} />
+        <Route path="/zero-cost-sms"      element={<Zerocostsms />} />
+        <Route path="/discounted-rates"   element={<Discountedrates />} />
 
         {/* Footer Legal Pages */}
-        <Route path="/privacy-policy"  element={<Privacypolicy />} />
+        <Route path="/privacy-policy"        element={<Privacypolicy />} />
         <Route path="/terms-and-conditions"  element={<Termsandconditions />} />
         <Route path="/vulnerability-policy"  element={<VulnerabilityPolicy />} />
-        <Route path="/modern-slavery-policy"  element={<Modernslaverypolicy />} />
-        <Route path="/esg-policy"  element={<EsgPolicy />} />
+        <Route path="/modern-slavery-policy" element={<Modernslaverypolicy />} />
+        <Route path="/esg-policy"            element={<EsgPolicy />} />
 
       </Routes>
 

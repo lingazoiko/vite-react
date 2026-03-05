@@ -22,6 +22,10 @@ import Roamingandoverage from './pages/Roaming and Overage/Roamingandoverage';
 import Zerocostsms from './pages/Zero Cost SMS/Zerocostsms';
 import Discountedrates from './pages/Discounted Rates/Discountedrates';
 import Privacypolicy from './pages/Privacy Policy/Privacypolicy';
+import Termsandconditions from './pages/Terms and Conditions/Termsandconditions';
+import Vulnerabilitypolicy from './pages/Vulnerability Policy/Vulnerabilitypolicy';
+import Modernslaverypolicy from './pages/Modern Slavery Policy/Modernslaverypolicy';
+import Esgpolicy from './pages/ESG  policy/Esgpolicy';
 
 
 function App() {
@@ -54,6 +58,10 @@ function App() {
 
         {/* Footer Legal Pages */}
         <Route path="/privacy-policy"  element={<Privacypolicy />} />
+        <Route path="/terms-and-conditions"  element={<Termsandconditions />} />
+        <Route path="/vulnerability-policy"  element={<Vulnerabilitypolicy />} />
+        <Route path="/modern-slavery-policy"  element={<Modernslaverypolicy />} />
+        <Route path="/esg-policy"  element={<Esgpolicy />} />
 
       </Routes>
 

@@ -100,10 +100,18 @@ function Footer() {
               <li><NavLink className="nav-link" to="/privacy-policy">
            Privacy Policy
            </NavLink></li>
-              <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
-              <li><a href="/vulnerability-policy">Vulnerability Policy</a></li>
-              <li><a href="/modern-slavery-policy">Modern Slavery Policy</a></li>
-              <li><a href="/esg-policy">ESG Policy</a></li>
+            <li><NavLink className="nav-link" to="/terms-and-conditions">
+           Terms and Conditions
+           </NavLink></li>   
+            <li><NavLink className="nav-link" to="/vulnerability-policy">
+           Vulnerability Policy
+           </NavLink></li> 
+            <li><NavLink className="nav-link" to="/modern-slavery-policy">
+           Modern Slavery Policy
+           </NavLink></li>     
+              <li><NavLink className="nav-link" to="/esg-policy">
+           ESG Policy
+           </NavLink></li>
             </ul>
           </div>
 

@@ -26,6 +26,7 @@ import Modernslaverypolicy from './pages/modern-slavery-policy/ModernSlaveryPoli
 import Termsandconditions from './pages/terms-and-conditions/TermsAndConditions';
 import VulnerabilityPolicy from './pages/vulnerability-policy/VulnerabilityPolicy';
 import EsgPolicy from './pages/EsgPolicy.jsx/EsgPolicy';
+import Login from './pages/Login/Login';
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
         <Route path="/switch-and-save"    element={<SwitchAndSave />} />
         <Route path="/contact"            element={<Contact />} />
         <Route path="/support"            element={<Support />} />
+        <Route path="/login"            element={<Login />} />
 
         {/* Footer Pages */}
         <Route path="/faqs"               element={<Faqs />} />

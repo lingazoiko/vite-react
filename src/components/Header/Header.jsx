@@ -86,7 +86,9 @@ function Header() {
           <div className="d-flex align-items-center gap-3">
             <i className="bi bi-search"></i>
             <i className="bi bi-cart"></i>
-            <button className="btn btn-login">Login</button>
+            <button className="btn btn-login"><NavLink  to="/login">
+           Login
+          </NavLink></button>
           </div>
         </div>
       </nav>

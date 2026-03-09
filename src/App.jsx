@@ -27,6 +27,7 @@ import Termsandconditions from './pages/terms-and-conditions/TermsAndConditions'
 import VulnerabilityPolicy from './pages/vulnerability-policy/VulnerabilityPolicy';
 import EsgPolicy from './pages/EsgPolicy.jsx/EsgPolicy';
 import Login from './pages/Login/Login';
+import StudentPlan from './pages/Student Plans/StudentPlan';
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
         <Route path="/contact"            element={<Contact />} />
         <Route path="/support"            element={<Support />} />
         <Route path="/login"            element={<Login />} />
+        <Route path="/student-discount-programme/"            element={<StudentPlan />} />
 
         {/* Footer Pages */}
         <Route path="/faqs"               element={<Faqs />} />

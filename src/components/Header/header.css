@@ -1,78 +1,295 @@
-/* TOP BAR */
-.top-bar {
+/* ═══════════════════════════════════════════════════
+   TOP BAR
+═══════════════════════════════════════════════════ */
+.zkTopBar {
   background: linear-gradient(90deg, #e6fff6, #ffffff);
-  font-size: 14px;
-  padding: 10px 0;
-  transition: all 0.3s ease;
+  padding: 9px 0;
+  max-height: 44px;
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.35s ease, padding 0.35s ease;
 }
 
-.top-bar a {
+.zkTopBar--hidden {
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  pointer-events: none;
+}
+
+.zkTopLink {
   color: #525252;
-  text-decoration: none;
-      font-size: 14px;
-    font-weight: 500;
-}
-
-.top-bar a:hover {
-  text-decoration: underline;
-}
-
-/* Hide top bar on scroll */
-.top-bar.hide {
-  display: none;
-}
-
-/* MAIN HEADER */
-.main-header {
-  background: #fff;
-  padding: 15px 0;
-  transition: all 0.3s ease;
-  width: 100%;
-  z-index: 999;
-}
-
-.main-header .nav-link {
+  font-size: 13.5px;
   font-weight: 500;
-      color: #525252;
-    fill: #525252;
-    font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.zkTopLink:hover { color: #0a7b4f; text-decoration: underline; }
+
+
+/* ═══════════════════════════════════════════════════
+   MAIN NAV
+═══════════════════════════════════════════════════ */
+.zkNav {
+  background: #fff;
+  padding: 14px 0;
+  width: 100%;
+  z-index: 1000;
+  transition: box-shadow 0.3s, padding 0.3s;
 }
 
-.main-header .nav-link:hover {
-  color: #0a7b4f;
-}
-
-/* STICKY HEADER */
-.main-header.sticky {
+.zkNav--sticky {
   position: fixed;
   top: 0;
   left: 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 10px 0;
+  box-shadow: 0 2px 18px rgba(0,0,0,0.09);
 }
 
-/* LOGIN BUTTON */
-.btn-login {
+/* Nav link list */
+.zkNavLinks {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.zkNavItem { position: relative; }
+
+.zkNavLink {
+  font-size: 14px;
+  font-weight: 500;
+  color: #525252;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 0;
+}
+.zkNavLink:hover,
+.zkNavLink.active { color: #0a7b4f; }
+
+/* Right side */
+.zkNavRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.zkIconBtn {
+  background: none;
+  border: none;
+  font-size: 17px;
+  color: #525252;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+}
+.zkIconBtn:hover { background: #f0f0f0; color: #1a1a1a; }
+
+.zkLoginBtn {
   display: inline-block;
-    padding: 10px 20px !important;
-    color: #fff !important;
-    text-decoration: none;
-    background-image: linear-gradient(150deg, #1E8389 0%, #3E4F0B 100%) !important;
-    border-radius: 8px;
-    font-size: 13px !important;
-    font-weight: 700 !important;
-    cursor: pointer;
-    transition: 0.3s;
+  padding: 9px 22px;
+  color: #fff;
+  background: linear-gradient(150deg, #1E8389 0%, #3E4F0B 100%);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s;
 }
-.btn-login a{
-    color: #fff !important;
-    text-decoration: none;
+.zkLoginBtn:hover { opacity: 0.88; transform: translateY(-1px); color: #fff; }
+
+
+/* ═══════════════════════════════════════════════════
+   PLANS TRIGGER
+═══════════════════════════════════════════════════ */
+.zkPlansTrigger {
+  position: relative;
 }
 
-.btn-login:hover {
-  opacity: 0.9;
+/* Pink underline slide-in */
+.zkPlansTrigger::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #e91e8c;
+  border-radius: 2px;
+  transition: width 0.25s ease;
+}
+.zkPlansTrigger--open,
+.zkPlansTrigger:hover { color: #e91e8c !important; }
+.zkPlansTrigger--open::after,
+.zkPlansTrigger:hover::after { width: 100%; }
+
+/* Chevron */
+.zkChevron {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  color: currentColor;
+}
+.zkChevron--open { transform: rotate(180deg); }
+
+
+/* ═══════════════════════════════════════════════════
+   DROPDOWN PANEL
+═══════════════════════════════════════════════════ */
+.zkDrop {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px) scale(0.97);
+  width: 290px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.06);
+  padding: 8px 0 12px;
+  z-index: 1001;
+
+  /* hidden */
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition:
+    opacity 0.2s ease,
+    transform 0.25s cubic-bezier(0.34, 1.4, 0.64, 1),
+    visibility 0s linear 0.2s;
 }
 
-/* Prevent content jump */
-.header-spacer {
-  height: 80px;
+.zkDrop--open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0) scale(1);
+  transition:
+    opacity 0.2s ease,
+    transform 0.25s cubic-bezier(0.34, 1.4, 0.64, 1),
+    visibility 0s linear 0s;
+}
+
+/* Top arrow */
+.zkDropArrow {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-left: 1px solid rgba(0,0,0,0.08);
+  border-top: 1px solid rgba(0,0,0,0.08);
+  transform: translateX(-50%) rotate(45deg);
+  border-radius: 2px 0 0 0;
+}
+
+/* ── All Plans ── */
+.zkDropAllPlans {
+  display: block;
+  padding: 10px 18px 10px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 4px;
+  transition: color 0.15s, background 0.15s;
+}
+.zkDropAllPlans:hover { color: #e91e8c; background: #fdf5fb; }
+
+/* ── Group label ── */
+.zkDropGroupLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #aaa;
+  padding: 10px 18px 5px;
+  margin: 0;
+}
+
+/* ── Row (each plan item) ── */
+.zkDropRow {
+  /* CRITICAL: flex row so icon and text sit side by side */
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 12px;
+  padding: 8px 18px;
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: background 0.15s ease;
+  cursor: pointer;
+
+  /* stagger animation on open */
+  opacity: 0;
+  animation: none;
+}
+
+.zkDrop--open .zkDropRow {
+  animation: zkRowIn 0.22s ease forwards;
+}
+
+@keyframes zkRowIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.zkDropRow:hover { background: #fdf0f8; }
+
+/* ── Icon bubble ── */
+.zkDropIcon {
+  /* fixed square so it never wraps or grows */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  min-width: 34px;   /* prevent shrink */
+  border-radius: 8px;
+  background: #f5f5f5;
+  font-size: 17px;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+.zkDropRow:hover .zkDropIcon { background: #fce4f3; }
+
+/* ── Text column ── */
+.zkDropTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.zkDropLabel {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #1a1a1a;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+
+/* Pink variant (Essential Worker Plans in screenshot) */
+.zkDropLabel--pink { color: #e91e8c; }
+
+.zkDropRow:hover .zkDropLabel { color: #e91e8c; }
+
+.zkDropSub {
+  font-size: 11.5px;
+  color: #aaa;
+  font-weight: 400;
+  white-space: nowrap;
 }
